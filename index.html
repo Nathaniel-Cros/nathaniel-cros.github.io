@@ -58,10 +58,41 @@
           <div class="profile-card">
             <h2>Enfoque</h2>
             <ul>
-              <li>Arquitectura front-end escalable</li>
-              <li>Optimizacion de performance y UX</li>
-              <li>Integracion VTEX + herramientas internas</li>
+              <li>
+                <strong>Arquitectura Front-End Escalable</strong><br />
+                Diseño y mantenimiento de arquitecturas front-end orientadas a
+                e-commerce y productos digitales, con componentes reutilizables,
+                control de estado claro y código fácil de escalar.
+              </li>
+
+              <li>
+                <strong>Performance, UX y conversión</strong><br />
+                Optimización de experiencias críticas (PLP, PDP y Checkout),
+                enfocada en tiempos de carga, manejo de estados edge y
+                reducción de fricción para el usuario final.
+              </li>
+
+              <li>
+                <strong>Customización e Integración en VTEX</strong><br />
+                Desarrollo sobre VTEX Legacy y Store Framework:
+                variantes, filtros, promociones e integración con APIs,
+                tracking y herramientas externas.
+              </li>
+
+              <li>
+                <strong>Arquitectura Back-End y servicios</strong><br />
+                Implementación de APIs y lógica de negocio en Go, Node y PHP,
+                con contratos claros y soporte a arquitecturas front-end modernas.
+              </li>
+
+              <li>
+                <strong>DevOps y mejora de procesos</strong><br />
+                Automatización de flujos de desarrollo y despliegue mediante
+                Docker, CI/CD y scripts, con el objetivo de reducir fallas humanas,
+                mejorar la estabilidad y acelerar la entrega a producción.
+              </li>
             </ul>
+
           </div>
           <div class="profile-card">
             <h2>Disponibilidad</h2>
@@ -73,51 +104,57 @@
       <section id="casos" class="section">
         <div class="section-header">
           <h2>Case studies</h2>
-          <p>Trabajos bajo NDA presentados como casos de estudio. <!-- TODO: reemplaza con tus datos reales --></p>
+          <!-- TODO: reemplaza con tus datos reales -->
+          <p>Trabajos bajo NDA presentados como casos de estudio.</p>
         </div>
         <!-- TODO: coloca tus capturas en assets/img/ usando los nombres sugeridos en cada card -->
         <div class="cards">
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case-vtex-variants.png" alt="Preview del case study VTEX PDP" />
-              <span class="fallback">Anade tu captura aqui</span>
+              <img src="assets/img/case_variants.png" alt="Preview del case study VTEX PDP" />
             </div>
             <div class="card-body">
               <h3>VTEX PDP: Selector de Variantes</h3>
               <p class="context">Contexto: PDP con catalogos complejos y variaciones por SKU.</p>
               <ul>
-                <li>Disene un selector accesible con estados claros.</li>
+                <li>Diseñe un selector accesible con estados claros.</li>
                 <li>Integre validaciones de stock en tiempo real.</li>
-                <li>Reduje errores de seleccion en mobile.</li>
+                <li>Reduje errores de selección en mobile.</li>
               </ul>
               <p class="stack">Stack: VTEX IO, React, TypeScript</p>
-              <p class="impact">Impacto: [por completar]</p>
+              <p class="impact">Impacto: Se mejoró la visualización de combinaciones de producto,
+                evitando que opciones disponibles quedaran ocultas al cambiar talla o color,
+                lo que redujo confusión del usuario y mejoró la claridad del estado del inventario.
+              </p>
               <p class="nda">Repositorio y detalles protegidos por NDA.</p>
             </div>
           </article>
 
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case-vtex-plp-filters.png" alt="Preview del case study VTEX PLP" />
+              <img src="assets/img/case_search.png" alt="Preview del case study VTEX PLP" />
               <span class="fallback">Anade tu captura aqui</span>
             </div>
             <div class="card-body">
               <h3>VTEX PLP: Filtros y UX</h3>
-              <p class="context">Contexto: filtros dinamicos y resultados con alta rotacion.</p>
+              <p class="context">Contexto: PLP con alto volumen de productos y necesidad de integrar
+                campañas comerciales sin afectar la experiencia de búsqueda.</p>
               <ul>
-                <li>Reorganice facetas para mejorar descubrimiento.</li>
-                <li>Implemente estados vacios con recomendaciones.</li>
-                <li>Optimice transiciones entre filtros.</li>
+                <li>Customización del search y lógica de resultados.</li>
+                <li>Integración de banners dinámicos dentro del grid del PLP.</li>
+                <li>Adaptación responsive (desktop y mobile).</li>
               </ul>
               <p class="stack">Stack: VTEX IO, React, GraphQL</p>
-              <p class="impact">Impacto: [por completar]</p>
+              <p class="impact">Impacto: Se personalizó el flujo de búsqueda y el layout del PLP,
+                integrando banners comerciales sin afectar filtros ni navegación,
+                mejorando la visibilidad de campañas y la experiencia de exploración.</p>
               <p class="nda">Repositorio y detalles protegidos por NDA.</p>
             </div>
           </article>
 
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case-checkout-ui.png" alt="Preview del case study Checkout" />
+              <img src="assets/img/case_checkout.png" alt="Preview del case study Checkout" />
               <span class="fallback">Anade tu captura aqui</span>
             </div>
             <div class="card-body">
@@ -136,33 +173,38 @@
 
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case-performance.png" alt="Preview del case study Performance" />
-              <span class="fallback">Anade tu captura aqui</span>
+              <img src="assets/img/case_performance.png" alt="Preview del case study Performance" />
             </div>
             <div class="card-body">
               <h3>Performance: Optimizacion LCP/CLS</h3>
-              <p class="context">Contexto: sitio con latencia en PDP/PLP y CLS alto.</p>
+              <p class="context">Contexto: Sitio con latencia en vistas críticas (PLP y PDP) y problemas
+                de estabilidad visual causados por carga de media y dependencias de renderizado.
+              </p>
               <ul>
-                <li>Audite y ajuste el critical rendering path.</li>
-                <li>Implemente loading strategies para media.</li>
-                <li>Coordine mejoras con backend y CDN.</li>
+                <li>Auditoría de métricas LCP y CLS en flujos críticos.</li>
+                <li>Optimización del critical rendering path.</li>
+                <li>Implementación de estrategias de carga para imágenes y media.</li>
+                <li>Corrección de layout shifts mediante control de dimensiones y orden de render.</li>
+                <li>Coordinación de mejoras con backend y CDN.</li>
               </ul>
-              <p class="stack">Stack: Lighthouse, VTEX, Nginx</p>
-              <p class="impact">Impacto: [por completar]</p>
+              <p class="stack">Stack: VTEX</p>
+              <p class="impact">Impacto: Mejora en la estabilidad visual y tiempos de carga percibidos
+                en PLP y PDP, reduciendo layout shifts y mejorando la experiencia
+                de navegación, especialmente en mobile.
+              </p>
               <p class="nda">Repositorio y detalles protegidos por NDA.</p>
             </div>
           </article>
 
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case-infra-cicd.png" alt="Preview del case study Infra" />
-              <span class="fallback">Anade tu captura aqui</span>
+              <img src="assets/img/case_devops.png" alt="Preview del case study Infra" />
             </div>
             <div class="card-body">
               <h3>Infra: Deploy Docker + CI/CD</h3>
               <p class="context">Contexto: pipelines manuales y despliegues inconsistentes.</p>
               <ul>
-                <li>Disene pipelines con validaciones de calidad.</li>
+                <li>Diseñe pipelines con validaciones de calidad.</li>
                 <li>Containerice servicios criticos.</li>
                 <li>Estandarice la entrega continua.</li>
               </ul>
