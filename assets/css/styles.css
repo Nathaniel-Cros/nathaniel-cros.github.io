@@ -85,6 +85,31 @@ img {
   text-transform: uppercase;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 4px;
+  background: var(--card);
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.lang-btn.is-active {
+  background: var(--primary);
+  color: #fff;
+}
+
 .nav-links {
   display: flex;
   gap: 20px;
@@ -409,6 +434,10 @@ main {
 @media (max-width: 900px) {
   .nav-links {
     display: none;
+  }
+
+  .lang-switch {
+    order: 2;
   }
 
   .nav-toggle {

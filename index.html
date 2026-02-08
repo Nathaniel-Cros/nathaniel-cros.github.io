@@ -9,208 +9,190 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido" data-i18n="skip">Saltar al contenido</a>
 
     <header class="site-header">
       <nav class="nav" aria-label="Principal">
         <a class="logo" href="#inicio">Nathaniel Ruiz</a>
         <div class="nav-links">
-          <a href="#casos">Case studies</a>
-          <a href="#marcas">Marcas</a>
-          <a href="#repos">Repos</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#casos" data-i18n="nav.caseStudies">Case studies</a>
+          <a href="#marcas" data-i18n="nav.brands">Marcas</a>
+          <a href="#repos" data-i18n="nav.repos">Repos</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        </div>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+          <button class="lang-btn is-active" type="button" data-lang="es">ES</button>
         </div>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-          <span class="sr-only">Abrir menú</span>
-          <span aria-hidden="true">Menu</span>
+          <span class="sr-only" data-i18n="nav.menuToggle">Abrir menu</span>
+          <span aria-hidden="true" data-i18n="nav.menu">Menu</span>
         </button>
       </nav>
       <div id="nav-menu" class="nav-menu" hidden>
-        <a href="#casos">Case studies</a>
-        <a href="#marcas">Marcas</a>
-        <a href="#repos">Repos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#casos" data-i18n="nav.caseStudies">Case studies</a>
+        <a href="#marcas" data-i18n="nav.brands">Marcas</a>
+        <a href="#repos" data-i18n="nav.repos">Repos</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       </div>
     </header>
 
     <main id="contenido">
       <section id="inicio" class="hero">
         <div class="hero-content">
-          <p class="eyebrow">Disponible para proyectos freelance y contract</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Disponible para proyectos freelance y contract</p>
           <h1>
-            Oscar Nathaniel Ruiz Pérez
+            Oscar Nathaniel Ruiz Perez
             <span class="display">Nathaniel Ruiz</span>
           </h1>
-          <p class="title">Tech Lead Front-End | VTEX | React/Vite | Go</p>
-          <p class="summary">
+          <p class="title" data-i18n="hero.title">Tech Lead Front-End | VTEX | React/Vite | Go</p>
+          <p class="summary" data-i18n="hero.summary">
             Especializado en e-commerce VTEX y construccion de SaaS (NalyHist).
-            <!-- TODO: Actualiza este resumen con tu propuesta de valor -->
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="assets/cv/cv.pdf" download>Descargar CV</a>
+            <a class="button primary" href="assets/cv/cv-es.pdf" data-i18n="hero.cv" data-i18n-href="cvHref" download>Descargar CV</a>
             <a class="button ghost" href="https://github.com/Nathaniel-Cros" target="_blank" rel="noopener">GitHub</a>
-            <a class="button ghost" href="https://www.linkedin.com/in/placeholder" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="button ghost" href="mailto:tu-email@dominio.com">Email</a>
+            <a class="button ghost" href="https://www.linkedin.com/in/placeholder" target="_blank" rel="noopener" data-i18n="hero.linkedin">LinkedIn</a>
+            <a class="button ghost" href="mailto:tu-email@dominio.com" data-i18n="hero.email">Email</a>
             <!-- TODO: actualiza LinkedIn y email -->
           </div>
         </div>
         <div class="hero-panel">
           <div class="profile-card">
-            <h2>Enfoque</h2>
+            <h2 data-i18n="focus.title">Enfoque</h2>
             <ul>
               <li>
-                <strong>Arquitectura Front-End Escalable</strong><br />
-                Diseño y mantenimiento de arquitecturas front-end orientadas a
-                e-commerce y productos digitales, con componentes reutilizables,
-                control de estado claro y código fácil de escalar.
+                <strong data-i18n="focus.item1.title">Arquitectura Front-End Escalable</strong><br />
+                <span data-i18n="focus.item1.body">Diseno y mantenimiento de arquitecturas front-end orientadas a e-commerce y productos digitales, con componentes reutilizables, control de estado claro y codigo facil de escalar.</span>
               </li>
 
               <li>
-                <strong>Performance, UX y conversión</strong><br />
-                Optimización de experiencias críticas (PLP, PDP y Checkout),
-                enfocada en tiempos de carga, manejo de estados edge y
-                reducción de fricción para el usuario final.
+                <strong data-i18n="focus.item2.title">Performance, UX y conversion</strong><br />
+                <span data-i18n="focus.item2.body">Optimizacion de experiencias criticas (PLP, PDP y Checkout), enfocada en tiempos de carga, manejo de estados edge y reduccion de friccion para el usuario final.</span>
               </li>
 
               <li>
-                <strong>Customización e Integración en VTEX</strong><br />
-                Desarrollo sobre VTEX Legacy y Store Framework:
-                variantes, filtros, promociones e integración con APIs,
-                tracking y herramientas externas.
+                <strong data-i18n="focus.item3.title">Customizacion e Integracion en VTEX</strong><br />
+                <span data-i18n="focus.item3.body">Desarrollo sobre VTEX Legacy y Store Framework: variantes, filtros, promociones e integracion con APIs, tracking y herramientas externas.</span>
               </li>
 
               <li>
-                <strong>Arquitectura Back-End y servicios</strong><br />
-                Implementación de APIs y lógica de negocio en Go, Node y PHP,
-                con contratos claros y soporte a arquitecturas front-end modernas.
+                <strong data-i18n="focus.item4.title">Arquitectura Back-End y servicios</strong><br />
+                <span data-i18n="focus.item4.body">Implementacion de APIs y logica de negocio en Go, Node y PHP, con contratos claros y soporte a arquitecturas front-end modernas.</span>
               </li>
 
               <li>
-                <strong>DevOps y mejora de procesos</strong><br />
-                Automatización de flujos de desarrollo y despliegue mediante
-                Docker, CI/CD y scripts, con el objetivo de reducir fallas humanas,
-                mejorar la estabilidad y acelerar la entrega a producción.
+                <strong data-i18n="focus.item5.title">DevOps y mejora de procesos</strong><br />
+                <span data-i18n="focus.item5.body">Automatizacion de flujos de desarrollo y despliegue mediante Docker, CI/CD y scripts, con el objetivo de reducir fallas humanas, mejorar la estabilidad y acelerar la entrega a produccion.</span>
               </li>
             </ul>
-
           </div>
           <div class="profile-card">
-            <h2>Disponibilidad</h2>
-            <p>Proyectos remotos para equipos de producto y e-commerce.</p>
+            <h2 data-i18n="availability.title">Disponibilidad</h2>
+            <p data-i18n="availability.text">Proyectos remotos para equipos de producto y e-commerce.</p>
           </div>
         </div>
       </section>
 
       <section id="casos" class="section">
         <div class="section-header">
-          <h2>Case studies</h2>
+          <h2 data-i18n="caseStudies.title">Case studies</h2>
           <!-- TODO: reemplaza con tus datos reales -->
-          <p>Trabajos bajo NDA presentados como casos de estudio.</p>
+          <p data-i18n="caseStudies.intro">Trabajos bajo NDA presentados como casos de estudio.</p>
         </div>
         <!-- TODO: coloca tus capturas en assets/img/ usando los nombres sugeridos en cada card -->
         <div class="cards">
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case_variants.png" alt="Preview del case study VTEX PDP" />
+              <img src="assets/img/case_variants.png" alt="Preview del case study VTEX PDP" data-i18n-alt="caseStudies.case1.imageAlt" />
             </div>
             <div class="card-body">
-              <h3>VTEX PDP: Selector de Variantes</h3>
-              <p class="context">Contexto: PDP con catalogos complejos y variaciones por SKU.</p>
+              <h3 data-i18n="caseStudies.case1.title">VTEX PDP: Selector de Variantes</h3>
+              <p class="context" data-i18n="caseStudies.case1.context">Contexto: PDP con catalogos complejos y variaciones por SKU.</p>
               <ul>
-                <li>Diseñe un selector accesible con estados claros.</li>
-                <li>Integre validaciones de stock en tiempo real.</li>
-                <li>Reduje errores de selección en mobile.</li>
+                <li data-i18n="caseStudies.case1.bullet1">Disene un selector accesible con estados claros.</li>
+                <li data-i18n="caseStudies.case1.bullet2">Integre validaciones de stock en tiempo real.</li>
+                <li data-i18n="caseStudies.case1.bullet3">Reduje errores de seleccion en mobile.</li>
               </ul>
-              <p class="stack">Stack: VTEX IO, React, TypeScript</p>
-              <p class="impact">Impacto: Se mejoró la visualización de combinaciones de producto,
-                evitando que opciones disponibles quedaran ocultas al cambiar talla o color,
-                lo que redujo confusión del usuario y mejoró la claridad del estado del inventario.
-              </p>
-              <p class="nda">Repositorio y detalles protegidos por NDA.</p>
+              <p class="stack" data-i18n="caseStudies.case1.stack">Stack: VTEX IO, React, TypeScript</p>
+              <p class="impact" data-i18n="caseStudies.case1.impact">Impacto: Se mejoro la visualizacion de combinaciones de producto, evitando que opciones disponibles quedaran ocultas al cambiar talla o color, lo que redujo confusion del usuario y mejoro la claridad del estado del inventario.</p>
+              <p class="nda" data-i18n="caseStudies.nda">Repositorio y detalles protegidos por NDA.</p>
             </div>
           </article>
 
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case_search.png" alt="Preview del case study VTEX PLP" />
-              <span class="fallback">Anade tu captura aqui</span>
+              <img src="assets/img/case_search.png" alt="Preview del case study VTEX PLP" data-i18n-alt="caseStudies.case2.imageAlt" />
+              <span class="fallback" data-i18n="caseStudies.imageFallback">Anade tu captura aqui</span>
             </div>
             <div class="card-body">
-              <h3>VTEX PLP: Filtros y UX</h3>
-              <p class="context">Contexto: PLP con alto volumen de productos y necesidad de integrar
-                campañas comerciales sin afectar la experiencia de búsqueda.</p>
+              <h3 data-i18n="caseStudies.case2.title">VTEX PLP: Filtros y UX</h3>
+              <p class="context" data-i18n="caseStudies.case2.context">Contexto: PLP con alto volumen de productos y necesidad de integrar campanas comerciales sin afectar la experiencia de busqueda.</p>
               <ul>
-                <li>Customización del search y lógica de resultados.</li>
-                <li>Integración de banners dinámicos dentro del grid del PLP.</li>
-                <li>Adaptación responsive (desktop y mobile).</li>
+                <li data-i18n="caseStudies.case2.bullet1">Customizacion del search y logica de resultados.</li>
+                <li data-i18n="caseStudies.case2.bullet2">Integracion de banners dinamicos dentro del grid del PLP.</li>
+                <li data-i18n="caseStudies.case2.bullet3">Adaptacion responsive (desktop y mobile).</li>
               </ul>
-              <p class="stack">Stack: VTEX IO, React, GraphQL</p>
-              <p class="impact">Impacto: Se personalizó el flujo de búsqueda y el layout del PLP,
-                integrando banners comerciales sin afectar filtros ni navegación,
-                mejorando la visibilidad de campañas y la experiencia de exploración.</p>
-              <p class="nda">Repositorio y detalles protegidos por NDA.</p>
+              <p class="stack" data-i18n="caseStudies.case2.stack">Stack: VTEX IO, React, GraphQL</p>
+              <p class="impact" data-i18n="caseStudies.case2.impact">Impacto: Se personalizo el flujo de busqueda y el layout del PLP, integrando banners comerciales sin afectar filtros ni navegacion, mejorando la visibilidad de campanas y la experiencia de exploracion.</p>
+              <p class="nda" data-i18n="caseStudies.nda">Repositorio y detalles protegidos por NDA.</p>
             </div>
           </article>
 
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case_checkout.png" alt="Preview del case study Checkout" />
-              <span class="fallback">Anade tu captura aqui</span>
+              <img src="assets/img/case_checkout.png" alt="Preview del case study Checkout" data-i18n-alt="caseStudies.case3.imageAlt" />
+              <span class="fallback" data-i18n="caseStudies.imageFallback">Anade tu captura aqui</span>
             </div>
             <div class="card-body">
-              <h3>Checkout: Personalizacion UI</h3>
-              <p class="context">Contexto: checkout con requerimientos de marca y experimentos A/B.</p>
+              <h3 data-i18n="caseStudies.case3.title">Checkout: Personalizacion UI</h3>
+              <p class="context" data-i18n="caseStudies.case3.context">Contexto: checkout con requerimientos de marca y experimentos A/B.</p>
               <ul>
-                <li>Unifique componentes para reducir debt.</li>
-                <li>Mejore mensajes de error y feedback.</li>
-                <li>Colabore con UX para iteraciones rapidas.</li>
+                <li data-i18n="caseStudies.case3.bullet1">Unifique componentes para reducir debt.</li>
+                <li data-i18n="caseStudies.case3.bullet2">Mejore mensajes de error y feedback.</li>
+                <li data-i18n="caseStudies.case3.bullet3">Colabore con UX para iteraciones rapidas.</li>
               </ul>
-              <p class="stack">Stack: VTEX Checkout, React, CSS Modules</p>
-              <p class="impact">Impacto: [por completar]</p>
-              <p class="nda">Repositorio y detalles protegidos por NDA.</p>
+              <p class="stack" data-i18n="caseStudies.case3.stack">Stack: VTEX Checkout, React, CSS Modules</p>
+              <p class="impact" data-i18n="caseStudies.case3.impact">Impacto: [por completar]</p>
+              <p class="nda" data-i18n="caseStudies.nda">Repositorio y detalles protegidos por NDA.</p>
             </div>
           </article>
 
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case_performance.png" alt="Preview del case study Performance" />
+              <img src="assets/img/case_performance.png" alt="Preview del case study Performance" data-i18n-alt="caseStudies.case4.imageAlt" />
             </div>
             <div class="card-body">
-              <h3>Performance: Optimizacion LCP/CLS</h3>
-              <p class="context">Contexto: Sitio con latencia en vistas críticas (PLP y PDP) y problemas
-                de estabilidad visual causados por carga de media y dependencias de renderizado.
-              </p>
+              <h3 data-i18n="caseStudies.case4.title">Performance: Optimizacion LCP/CLS</h3>
+              <p class="context" data-i18n="caseStudies.case4.context">Contexto: Sitio con latencia en vistas criticas (PLP y PDP) y problemas de estabilidad visual causados por carga de media y dependencias de renderizado.</p>
               <ul>
-                <li>Auditoría de métricas LCP y CLS en flujos críticos.</li>
-                <li>Optimización del critical rendering path.</li>
-                <li>Implementación de estrategias de carga para imágenes y media.</li>
-                <li>Corrección de layout shifts mediante control de dimensiones y orden de render.</li>
-                <li>Coordinación de mejoras con backend y CDN.</li>
+                <li data-i18n="caseStudies.case4.bullet1">Auditoria de metricas LCP y CLS en flujos criticos.</li>
+                <li data-i18n="caseStudies.case4.bullet2">Optimizacion del critical rendering path.</li>
+                <li data-i18n="caseStudies.case4.bullet3">Implementacion de estrategias de carga para imagenes y media.</li>
+                <li data-i18n="caseStudies.case4.bullet4">Correccion de layout shifts mediante control de dimensiones y orden de render.</li>
+                <li data-i18n="caseStudies.case4.bullet5">Coordinacion de mejoras con backend y CDN.</li>
               </ul>
-              <p class="stack">Stack: VTEX</p>
-              <p class="impact">Impacto: Mejora en la estabilidad visual y tiempos de carga percibidos
-                en PLP y PDP, reduciendo layout shifts y mejorando la experiencia
-                de navegación, especialmente en mobile.
-              </p>
-              <p class="nda">Repositorio y detalles protegidos por NDA.</p>
+              <p class="stack" data-i18n="caseStudies.case4.stack">Stack: VTEX</p>
+              <p class="impact" data-i18n="caseStudies.case4.impact">Impacto: Mejora en la estabilidad visual y tiempos de carga percibidos en PLP y PDP, reduciendo layout shifts y mejorando la experiencia de navegacion, especialmente en mobile.</p>
+              <p class="nda" data-i18n="caseStudies.nda">Repositorio y detalles protegidos por NDA.</p>
             </div>
           </article>
 
           <article class="card">
             <div class="image-placeholder">
-              <img src="assets/img/case_devops.png" alt="Preview del case study Infra" />
+              <img src="assets/img/case_devops.png" alt="Preview del case study Infra" data-i18n-alt="caseStudies.case5.imageAlt" />
             </div>
             <div class="card-body">
-              <h3>Infra: Deploy Docker + CI/CD</h3>
-              <p class="context">Contexto: pipelines manuales y despliegues inconsistentes.</p>
+              <h3 data-i18n="caseStudies.case5.title">Infra: Deploy Docker + CI/CD</h3>
+              <p class="context" data-i18n="caseStudies.case5.context">Contexto: pipelines manuales y despliegues inconsistentes.</p>
               <ul>
-                <li>Diseñe pipelines con validaciones de calidad.</li>
-                <li>Containerice servicios criticos.</li>
-                <li>Estandarice la entrega continua.</li>
+                <li data-i18n="caseStudies.case5.bullet1">Disene pipelines con validaciones de calidad.</li>
+                <li data-i18n="caseStudies.case5.bullet2">Containerice servicios criticos.</li>
+                <li data-i18n="caseStudies.case5.bullet3">Estandarice la entrega continua.</li>
               </ul>
-              <p class="stack">Stack: Docker, GitHub Actions, Go</p>
-              <p class="impact">Impacto: [por completar]</p>
-              <p class="nda">Repositorio y detalles protegidos por NDA.</p>
+              <p class="stack" data-i18n="caseStudies.case5.stack">Stack: Docker, GitHub Actions, Go</p>
+              <p class="impact" data-i18n="caseStudies.case5.impact">Impacto: [por completar]</p>
+              <p class="nda" data-i18n="caseStudies.nda">Repositorio y detalles protegidos por NDA.</p>
             </div>
           </article>
         </div>
@@ -218,8 +200,8 @@
 
       <section id="marcas" class="section brands">
         <div class="section-header">
-          <h2>Marcas y experiencia</h2>
-          <p>Marcas mencionadas con fines descriptivos; no implica afiliacion.</p>
+          <h2 data-i18n="brands.title">Marcas y experiencia</h2>
+          <p data-i18n="brands.disclaimer">Marcas mencionadas con fines descriptivos; no implica afiliacion.</p>
         </div>
         <ul class="brand-list">
           <li>Guess</li>
@@ -236,38 +218,38 @@
 
       <section id="repos" class="section">
         <div class="section-header">
-          <h2>Repos publicos</h2>
-          <p>Espacio para compartir herramientas o snippets abiertos.</p>
+          <h2 data-i18n="repos.title">Repos publicos</h2>
+          <p data-i18n="repos.intro">Espacio para compartir herramientas o snippets abiertos.</p>
         </div>
         <div class="repo-grid">
           <a class="repo-card" href="https://github.com/Nathaniel-Cros/vtex-snippets" target="_blank" rel="noopener">
             <h3>vtex-snippets</h3>
-            <p>Utilidades para proyectos VTEX. <!-- TODO: ajusta la descripcion --></p>
+            <p data-i18n="repos.repo1">Utilidades para proyectos VTEX.</p>
           </a>
           <a class="repo-card" href="https://github.com/Nathaniel-Cros/case-studies" target="_blank" rel="noopener">
             <h3>case-studies</h3>
-            <p>Plantillas para documentar proyectos. <!-- TODO: ajusta la descripcion --></p>
+            <p data-i18n="repos.repo2">Plantillas para documentar proyectos.</p>
           </a>
           <a class="repo-card" href="https://github.com/Nathaniel-Cros/vin-cli" target="_blank" rel="noopener">
             <h3>vin-cli</h3>
-            <p>CLI para automatizar tareas internas. <!-- TODO: ajusta la descripcion --></p>
+            <p data-i18n="repos.repo3">CLI para automatizar tareas internas.</p>
           </a>
         </div>
       </section>
 
       <section id="contacto" class="section contact">
         <div class="contact-card">
-          <h2>Contacto</h2>
-          <p>Listo para colaborar en productos e-commerce y SaaS.</p>
+          <h2 data-i18n="contact.title">Contacto</h2>
+          <p data-i18n="contact.text">Listo para colaborar en productos e-commerce y SaaS.</p>
           <p class="contact-email">tu-email@dominio.com</p>
-          <a class="button primary" href="mailto:tu-email@dominio.com">Hablemos</a>
+          <a class="button primary" href="mailto:tu-email@dominio.com" data-i18n="contact.cta">Hablemos</a>
           <!-- TODO: reemplaza el email con el tuyo -->
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>2024 © Nathaniel Ruiz. Todos los derechos reservados.</p>
+      <p data-i18n="footer.text">2024 © Nathaniel Ruiz. Todos los derechos reservados.</p>
     </footer>
 
     <script src="assets/js/main.js"></script>
