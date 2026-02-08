@@ -135,6 +135,12 @@ const translations = {
       title: 'Marcas y experiencia',
       disclaimer: 'Marcas mencionadas con fines descriptivos; no implica afiliacion.',
     },
+    projects: {
+      title: 'Proyectos en GitHub',
+      intro: 'Puedes encontrar un indice de mis proyectos en GitHub. Algunos repositorios se mantienen privados o protegidos por NDA.',
+      cta: 'Ver proyectos',
+      index: 'Ver indice curado',
+    },
     repos: {
       title: 'Repos publicos',
       intro: 'Espacio para compartir herramientas o snippets abiertos.',
@@ -258,6 +264,12 @@ const translations = {
     brands: {
       title: 'Brands and experience',
       disclaimer: 'Brands mentioned for descriptive purposes; no affiliation implied.',
+    },
+    projects: {
+      title: 'Projects on GitHub',
+      intro: 'You can find an index of my projects on GitHub. Some repositories are private or protected by NDA.',
+      cta: 'View projects',
+      index: 'View curated index',
     },
     repos: {
       title: 'Public repositories',

@@ -12,7 +12,7 @@ Sitio estatico de una sola pagina listo para GitHub Pages.
 
 ## Personalizacion rapida
 
-1. Reemplaza el email en `index.html` (buscar `tu-email@dominio.com`).
+1. Reemplaza el email en `index.html` (buscar `oscnathanielrp@gmail.com`).
 2. Actualiza los textos marcados con `TODO` dentro de `index.html`.
 3. Copia tus capturas en `assets/img/` usando los nombres sugeridos en cada card.
 4. Coloca tu CV en `assets/cv/cv.pdf`.
