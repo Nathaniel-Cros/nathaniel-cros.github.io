@@ -105,7 +105,7 @@ const translations = {
         bullet2: 'Mejore mensajes de error y feedback.',
         bullet3: 'Colabore con UX para iteraciones rapidas.',
         stack: 'Stack: VTEX Checkout, React, CSS Modules',
-        impact: 'Impacto: [por completar]',
+        impact: 'Impacto: Optimizacion de la experiencia de checkout mediante componentes reutilizables y mensajes de feedback claros, mejorando la comprension del flujo y reduciendo friccion en el proceso de pago.',
         imageAlt: 'Preview del case study Checkout',
       },
       case4: {
@@ -127,7 +127,7 @@ const translations = {
         bullet2: 'Containerice servicios criticos.',
         bullet3: 'Estandarice la entrega continua.',
         stack: 'Stack: Docker, GitHub Actions, Go',
-        impact: 'Impacto: [por completar]',
+        impact: 'Impacto: Automatizacion del proceso de build y deploy mediante Docker y CI/CD, disminuyendo errores humanos y mejorando la confiabilidad en la entrega continua de servicios criticos.',
         imageAlt: 'Preview del case study Infra',
       },
     },
