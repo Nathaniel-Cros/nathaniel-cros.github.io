@@ -1,7 +1,9 @@
 <script setup>
-import SectionPlaceholderCard from '../components/ui/SectionPlaceholderCard.vue'
 import SectionShell from '../components/ui/SectionShell.vue'
-import { workContent } from '../data/site'
+import WorkCaseStudyCard from '../components/ui/WorkCaseStudyCard.vue'
+import { useSiteContent } from '../composables/useSiteContent'
+
+const { workContent } = useSiteContent()
 </script>
 
 <template>
@@ -11,14 +13,14 @@ import { workContent } from '../data/site'
     :title="workContent.title"
     :description="workContent.description"
   >
-    <div class="grid gap-5 lg:grid-cols-3">
-      <SectionPlaceholderCard
-        v-for="caseStudy in workContent.caseStudies"
-        :key="caseStudy.title"
-        :eyebrow="caseStudy.eyebrow"
-        :title="caseStudy.title"
-        :description="caseStudy.description"
-        :meta="caseStudy.meta"
+    <div class="grid gap-5 xl:grid-cols-2">
+      <WorkCaseStudyCard
+        v-for="item in workContent.items"
+        :key="item.title"
+        :title="item.title"
+        :description="item.description"
+        :tags="item.tags"
+        :impact="item.impact"
       />
     </div>
   </SectionShell>

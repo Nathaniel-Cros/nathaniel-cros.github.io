@@ -10,6 +10,8 @@ export function useSiteContent() {
     heroContent: computed(() => tm('hero')),
     aboutContent: computed(() => tm('about')),
     experienceContent: computed(() => tm('experience')),
+    workContent: computed(() => tm('work')),
+    stackContent: computed(() => tm('stack')),
     contactContent: computed(() => tm('contact')),
   }
 }

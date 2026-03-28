@@ -13,6 +13,8 @@ export const es = {
     items: [
       { label: 'Sobre mí', href: '#about' },
       { label: 'Experiencia', href: '#experience' },
+      { label: 'Selected Work', href: '#work' },
+      { label: 'Stack', href: '#stack' },
       { label: 'Contacto', href: '#contact' },
     ],
   },
@@ -24,6 +26,14 @@ export const es = {
       'Combino frontend, backend y arquitectura para construir sistemas sólidos, adaptables y con impacto real en negocio.',
     actions: [
       { label: 'Escríbeme', href: 'mailto:oscnathanielrp@gmail.com', variant: 'primary' },
+      {
+        label: 'Descargar CV',
+        href: '/downloads/es_cv.pdf',
+        variant: 'secondary',
+        download: 'Oscar-Nathaniel-Ruiz-CV-ES.pdf',
+        target: '_blank',
+        rel: 'noopener noreferrer',
+      },
       { label: 'Ver experiencia', href: '#experience', variant: 'secondary' },
       { label: 'Contacto', href: '#contact', variant: 'secondary' },
     ],
@@ -132,6 +142,93 @@ export const es = {
     impactLabel: 'Impacto',
   },
 
+  work: {
+    eyebrow: 'Selected Work',
+    title: 'Trabajo seleccionado con foco en impacto, criterio técnico y ejecución.',
+    description:
+      'Una selección breve de trabajo relevante. El objetivo aquí no es listar tareas, sino mostrar qué problemas resolví y dónde aporté más valor.',
+    impactLabel: 'Resultado',
+    items: [
+      {
+        title: 'Implementaciones multi-brand en VTEX',
+        description:
+          'Lideré y ejecuté implementaciones e-commerce para múltiples marcas internacionales dentro de un mismo ecosistema, manteniendo consistencia técnica y velocidad de entrega.',
+        tags: ['VTEX', 'Frontend Architecture', 'Delivery'],
+        impact:
+          'Trabajo directo sobre más de 10 marcas internacionales dentro del contexto de Grupo AXO.',
+      },
+      {
+        title: 'CLI interno para flujos VTEX',
+        description:
+          'Desarrollé una herramienta interna para reducir fricción operativa en tareas repetitivas y acelerar el trabajo del equipo sobre VTEX.',
+        tags: ['CLI', 'Automation', 'VTEX'],
+        impact:
+          'Mejoró la productividad del equipo y dio más consistencia a los flujos de entrega.',
+      },
+      {
+        title: 'Nuevas funcionalidades para Chedraui',
+        description:
+          'Participé en la implementación desde cero de nuevas funcionalidades e-commerce, combinando definición técnica y ejecución fullstack.',
+        tags: ['VTEX', 'Fullstack', 'E-commerce'],
+        impact:
+          'Aportó nuevas capacidades de producto sobre una base más escalable.',
+      },
+      {
+        title: 'Migración y módulos sobre VTEX IO',
+        description:
+          'Contribuí a iniciativas como OnCity y al desarrollo de módulos para administración y aplicaciones integradas sobre VTEX IO.',
+        tags: ['React', 'VTEX IO', 'Migration'],
+        impact:
+          'Apoyó migraciones y operación multi-cliente en un contexto internacional.',
+      },
+      {
+        title: 'Performance en flujos críticos',
+        description:
+          'Trabajé sobre experiencias de alto impacto como PLP, PDP y checkout, con foco en estabilidad, UX y performance.',
+        tags: ['Performance', 'LCP / CLS', 'UX'],
+        impact:
+          'Orientado a sostener experiencias más rápidas y consistentes en e-commerce.',
+      },
+    ],
+  },
+
+  stack: {
+    eyebrow: 'Stack',
+    title: 'Capacidades técnicas organizadas por contexto de trabajo, no por moda.',
+    description:
+      'Agrupé el stack para mostrar cómo trabajo y dónde suelo aportar más valor, en lugar de convertir la sección en una lista plana de tecnologías.',
+    groups: [
+      {
+        eyebrow: 'Frontend',
+        title: 'Frontend',
+        description:
+          'Construcción de interfaces críticas, experiencias e-commerce y sistemas de UI con foco en performance.',
+        items: ['React', 'Vue', 'Angular', 'VTEX IO / Legacy', 'Vite', 'Tailwind CSS'],
+      },
+      {
+        eyebrow: 'Backend',
+        title: 'Backend',
+        description:
+          'Soporte backend para integraciones, APIs, automatización y necesidades puntuales del producto.',
+        items: ['Node.js', 'Python', 'Go', 'PHP'],
+      },
+      {
+        eyebrow: 'Architecture & Delivery',
+        title: 'Architecture & Delivery',
+        description:
+          'Definición técnica, operación y tooling para entregar con consistencia en equipos y proyectos complejos.',
+        items: ['Solution Architecture', 'CI/CD', 'Docker', 'Git', 'Jira', 'CLI Tooling'],
+      },
+      {
+        eyebrow: 'Product Domains',
+        title: 'Product Domains',
+        description:
+          'Áreas donde el trabajo técnico se conecta más directamente con negocio y experiencia de usuario.',
+        items: ['E-commerce', 'PLP / PDP / Checkout', 'Performance', 'Integrations', 'UX'],
+      },
+    ],
+  },
+
   contact: {
     eyebrow: 'Contacto',
     title: 'Contacto profesional directo.',
@@ -157,13 +254,15 @@ export const es = {
       },
       {
         title: 'LinkedIn',
-        value: 'Pendiente',
-        description: 'Se puede agregar en la siguiente iteración.',
+        value: 'linkedin.com/in/oscar-nathaniel-ruiz-perez',
+        description: 'Experiencia profesional, trayectoria y contexto de trabajo.',
+        href: 'https://www.linkedin.com/in/oscar-nathaniel-ruiz-perez-8841a316a/',
       },
       {
         title: 'GitHub',
-        value: 'Pendiente',
-        description: 'Se puede agregar en la siguiente iteración.',
+        value: 'github.com/Nathaniel-Cros',
+        description: 'Código, proyectos personales y exploraciones técnicas.',
+        href: 'https://github.com/Nathaniel-Cros/',
       },
     ],
   },

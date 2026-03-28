@@ -1,6 +1,9 @@
 <script setup>
+import SectionPlaceholderCard from '../components/ui/SectionPlaceholderCard.vue'
 import SectionShell from '../components/ui/SectionShell.vue'
-import { stackContent } from '../data/site'
+import { useSiteContent } from '../composables/useSiteContent'
+
+const { stackContent } = useSiteContent()
 </script>
 
 <template>
@@ -10,19 +13,15 @@ import { stackContent } from '../data/site'
     :title="stackContent.title"
     :description="stackContent.description"
   >
-    <div class="grid gap-5 lg:grid-cols-3">
-      <article
+    <div class="grid gap-5 md:grid-cols-2">
+      <SectionPlaceholderCard
         v-for="group in stackContent.groups"
-        :key="group.name"
-        class="surface-card p-6 sm:p-8"
-      >
-        <p class="section-label mb-4">{{ group.name }}</p>
-        <ul class="flex flex-wrap gap-3">
-          <li v-for="item in group.items" :key="item" class="chip">
-            {{ item }}
-          </li>
-        </ul>
-      </article>
+        :key="group.title"
+        :eyebrow="group.eyebrow"
+        :title="group.title"
+        :description="group.description"
+        :meta="group.items"
+      />
     </div>
   </SectionShell>
 </template>

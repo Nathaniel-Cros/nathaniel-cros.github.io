@@ -32,6 +32,9 @@ const { heroContent } = useSiteContent()
               v-for="action in heroContent.actions"
               :key="action.label"
               :href="action.href"
+              :target="action.target"
+              :rel="action.rel"
+              :download="action.download"
               :class="action.variant === 'primary' ? 'cta-primary' : 'cta-secondary'"
             >
               {{ action.label }}
