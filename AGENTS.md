@@ -26,3 +26,10 @@
 ## Contexto
 - Revisar /context (project.md, design.md, content.md) antes de implementar cambios relevantes
 - Alinear decisiones con esos archivos
+
+## Internacionalización (i18n)
+- Todo el contenido textual debe gestionarse desde `/languages`
+- Usar `messages` como punto central de acceso
+- No hardcodear textos dentro de componentes
+- Mantener consistencia en claves entre idiomas (ej: `hero.title`, `hero.subtitle`)
+- Si se agregan nuevos textos, deben incluirse en todos los idiomas existentes
