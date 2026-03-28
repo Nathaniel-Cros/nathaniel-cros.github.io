@@ -2,7 +2,7 @@ name: Deploy Portfolio (Vite + Vue)
 
 on:
   push:
-    branches: [portfolio-v2] # 👈 SOLO esta rama
+    branches: [master] # 👈 SOLO esta rama
   workflow_dispatch:
 
 permissions:
