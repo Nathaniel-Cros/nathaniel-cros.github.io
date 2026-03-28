@@ -1,13 +1,15 @@
 <script setup>
 import AppContainer from '../components/layout/AppContainer.vue'
-import { heroContent } from '../data/site'
+import { useSiteContent } from '../composables/useSiteContent'
+
+const { heroContent } = useSiteContent()
 </script>
 
 <template>
   <section id="hero" class="relative overflow-hidden pt-16 sm:pt-20">
     <AppContainer>
       <div
-        class="grid gap-10 pb-[var(--space-section)] lg:grid-cols-[minmax(0,1.2fr)_minmax(20rem,0.8fr)] lg:items-end"
+        class="grid gap-10 pb-[var(--space-section)] lg:grid-cols-[minmax(0,1.18fr)_minmax(20rem,0.82fr)] lg:items-end"
       >
         <div class="space-y-8">
           <div class="space-y-5">
@@ -28,7 +30,7 @@ import { heroContent } from '../data/site'
           <div class="flex flex-wrap gap-3">
             <a
               v-for="action in heroContent.actions"
-              :key="action.href"
+              :key="action.label"
               :href="action.href"
               :class="action.variant === 'primary' ? 'cta-primary' : 'cta-secondary'"
             >
@@ -49,7 +51,7 @@ import { heroContent } from '../data/site'
             style="background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.24), transparent);"
           />
 
-          <p class="section-label mb-6">Base Snapshot</p>
+          <p class="section-label mb-6">{{ heroContent.snapshotLabel }}</p>
 
           <dl class="grid gap-4 sm:grid-cols-2">
             <div

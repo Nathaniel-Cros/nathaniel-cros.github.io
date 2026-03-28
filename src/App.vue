@@ -1,13 +1,9 @@
 <script setup>
 import SiteHeader from './components/layout/SiteHeader.vue'
-import { navigationItems, siteMeta } from './data/site'
 import AboutSection from './sections/AboutSection.vue'
 import ContactSection from './sections/ContactSection.vue'
 import ExperienceSection from './sections/ExperienceSection.vue'
 import HeroSection from './sections/HeroSection.vue'
-import LabsSection from './sections/LabsSection.vue'
-import StackSection from './sections/StackSection.vue'
-import WorkSection from './sections/WorkSection.vue'
 </script>
 
 <template>
@@ -18,15 +14,12 @@ import WorkSection from './sections/WorkSection.vue'
     />
 
     <div class="app-shell relative">
-      <SiteHeader :brand="siteMeta.brand" :items="navigationItems" />
+      <SiteHeader />
 
       <main class="pb-24">
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
-        <WorkSection />
-        <StackSection />
-        <LabsSection />
         <ContactSection />
       </main>
     </div>

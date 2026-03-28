@@ -1,7 +1,9 @@
 <script setup>
-import SectionPlaceholderCard from '../components/ui/SectionPlaceholderCard.vue'
+import ExperienceTimelineItem from '../components/ui/ExperienceTimelineItem.vue'
 import SectionShell from '../components/ui/SectionShell.vue'
-import { experienceContent } from '../data/site'
+import { useSiteContent } from '../composables/useSiteContent'
+
+const { experienceContent } = useSiteContent()
 </script>
 
 <template>
@@ -11,14 +13,16 @@ import { experienceContent } from '../data/site'
     :title="experienceContent.title"
     :description="experienceContent.description"
   >
-    <div class="grid gap-5 lg:grid-cols-3">
-      <SectionPlaceholderCard
+    <div class="space-y-5">
+      <ExperienceTimelineItem
         v-for="role in experienceContent.roles"
-        :key="role.title"
-        :eyebrow="role.eyebrow"
-        :title="role.title"
-        :description="role.description"
-        :meta="role.meta"
+        :key="`${role.company}-${role.period}`"
+        :role="role.role"
+        :company="role.company"
+        :period="role.period"
+        :summary="role.summary"
+        :highlights="role.highlights"
+        :impact="role.impact"
       />
     </div>
   </SectionShell>

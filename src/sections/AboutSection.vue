@@ -1,7 +1,9 @@
 <script setup>
 import SectionPlaceholderCard from '../components/ui/SectionPlaceholderCard.vue'
 import SectionShell from '../components/ui/SectionShell.vue'
-import { aboutContent } from '../data/site'
+import { useSiteContent } from '../composables/useSiteContent'
+
+const { aboutContent } = useSiteContent()
 </script>
 
 <template>
@@ -11,7 +13,7 @@ import { aboutContent } from '../data/site'
     :title="aboutContent.title"
     :description="aboutContent.description"
   >
-    <div class="grid gap-5 lg:grid-cols-2">
+    <div class="grid gap-5 lg:grid-cols-3">
       <SectionPlaceholderCard
         v-for="card in aboutContent.cards"
         :key="card.title"
